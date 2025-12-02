@@ -11,7 +11,8 @@ const port = process.env.PORT || 3000; // eslint-disable-line no-undef
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('*', (req, res) => {
+// Catch-all route for SPA - must be last
+app.use((req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
