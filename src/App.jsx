@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AppointmentModal from './components/AppointmentModal';
 import ServiceDetail from './components/ServiceDetail';
+import Chatbot from './components/Chatbot';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -52,6 +53,7 @@ function App() {
         </main>
         <Footer />
         <AppointmentModal isOpen={isModalOpen} onClose={closeModal} />
+        <Chatbot />
       </div>
     </Router>
   );
