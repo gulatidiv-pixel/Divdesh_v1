@@ -56,7 +56,7 @@ const Services = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <Link to={`/ services / ${service.id} `} key={index}>
+                        <Link to={`/services/${service.id}`} key={index}>
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}

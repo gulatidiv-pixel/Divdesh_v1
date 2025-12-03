@@ -7,8 +7,13 @@ import Trust from './components/Trust';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AppointmentModal from './components/AppointmentModal';
-import ServiceDetail from './components/ServiceDetail';
 import Chatbot from './components/Chatbot';
+import HealthInsurancePage from './pages/HealthInsurancePage';
+import TermInsurancePage from './pages/TermInsurancePage';
+import ULIPsPage from './pages/ULIPsPage';
+import MutualFundsPage from './pages/MutualFundsPage';
+import PMSPage from './pages/PMSPage';
+import AIFPage from './pages/AIFPage';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -48,7 +53,12 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage openModal={openModal} />} />
-            <Route path="/services/:id" element={<ServiceDetail openModal={openModal} />} />
+            <Route path="/services/health-insurance" element={<HealthInsurancePage openModal={openModal} />} />
+            <Route path="/services/term-insurance" element={<TermInsurancePage openModal={openModal} />} />
+            <Route path="/services/ulips" element={<ULIPsPage openModal={openModal} />} />
+            <Route path="/services/mutual-funds" element={<MutualFundsPage openModal={openModal} />} />
+            <Route path="/services/pms" element={<PMSPage openModal={openModal} />} />
+            <Route path="/services/aif" element={<AIFPage openModal={openModal} />} />
           </Routes>
         </main>
         <Footer />
