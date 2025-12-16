@@ -18,16 +18,16 @@ const Hero = ({ openModal }) => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-brand-red/10 text-brand-red font-semibold text-sm mb-6">
-                            Wealth Management Redefined
+                            Your Trusted Wealth Partner
                         </span>
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-brand-dark">
-                            Grow Your Wealth <br />
+                            Grow your wealth with <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-orange-600">
-                                With Confidence
+                                clarity & confidence
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
-                            Expert financial guidance tailored to your unique goals. We combine human expertise with modern technology to secure your future.
+                            Thoughtful wealth solutions. Built around your goals. Powered by 20 years of experience. Delivered with a personal touch.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <button
@@ -47,17 +47,12 @@ const Hero = ({ openModal }) => {
 
                         <div className="mt-12 flex items-center gap-8">
                             <div>
-                                <p className="text-3xl font-bold text-brand-dark">15+</p>
-                                <p className="text-sm text-gray-500">Years Experience</p>
+                                <p className="text-3xl font-bold text-brand-dark">20+</p>
+                                <p className="text-sm text-gray-500">Years of Experience</p>
                             </div>
                             <div className="w-px h-12 bg-gray-200" />
                             <div>
-                                <p className="text-3xl font-bold text-brand-dark">$500M+</p>
-                                <p className="text-sm text-gray-500">Assets Managed</p>
-                            </div>
-                            <div className="w-px h-12 bg-gray-200" />
-                            <div>
-                                <p className="text-3xl font-bold text-brand-dark">2k+</p>
+                                <p className="text-3xl font-bold text-brand-dark">1K+</p>
                                 <p className="text-sm text-gray-500">Happy Clients</p>
                             </div>
                         </div>

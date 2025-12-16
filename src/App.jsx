@@ -14,6 +14,10 @@ import ULIPsPage from './pages/ULIPsPage';
 import MutualFundsPage from './pages/MutualFundsPage';
 import PMSPage from './pages/PMSPage';
 import AIFPage from './pages/AIFPage';
+import SIFPage from './pages/SIFPage';
+import MotorInsurancePage from './pages/MotorInsurancePage';
+import GroupInsurancePage from './pages/GroupInsurancePage';
+import OtherInsurancePage from './pages/OtherInsurancePage';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -59,6 +63,10 @@ function App() {
             <Route path="/services/mutual-funds" element={<MutualFundsPage openModal={openModal} />} />
             <Route path="/services/pms" element={<PMSPage openModal={openModal} />} />
             <Route path="/services/aif" element={<AIFPage openModal={openModal} />} />
+            <Route path="/services/sif" element={<SIFPage openModal={openModal} />} />
+            <Route path="/services/motor-insurance" element={<MotorInsurancePage openModal={openModal} />} />
+            <Route path="/services/group-insurance" element={<GroupInsurancePage openModal={openModal} />} />
+            <Route path="/services/other-insurance" element={<OtherInsurancePage openModal={openModal} />} />
           </Routes>
         </main>
         <Footer />

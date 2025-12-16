@@ -11,8 +11,11 @@ const Footer = () => {
                             <TrendingUp className="w-8 h-8 text-brand-red" />
                             <span>DivDesh<span className="text-brand-red">.</span></span>
                         </div>
-                        <p className="text-gray-400 leading-relaxed mb-6">
+                        <p className="text-gray-400 leading-relaxed mb-4">
                             Empowering your financial future with expert wealth management strategies tailored to your unique goals.
+                        </p>
+                        <p className="text-sm font-semibold text-brand-red mb-6">
+                            AMFI-registered Mutual Fund Distributor
                         </p>
                         <div className="flex space-x-4">
                             <a href="#" className="text-gray-400 hover:text-brand-red transition-colors"><Facebook className="w-5 h-5" /></a>
