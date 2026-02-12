@@ -1,4 +1,5 @@
-import { TrendingUp, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import logoFull from '../assets/logo-full.png';
 
 const Footer = () => {
     return (
@@ -7,9 +8,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div>
-                        <div className="flex items-center gap-2 font-bold text-2xl mb-4">
-                            <TrendingUp className="w-8 h-8 text-brand-red" />
-                            <span>DivDesh<span className="text-brand-red">.</span></span>
+                        <div className="mb-6 inline-block bg-white p-3 rounded-xl shadow-lg">
+                            <img src={logoFull} alt="DivDesh Logo" className="h-10 w-auto" />
                         </div>
                         <p className="text-gray-400 leading-relaxed mb-4">
                             Empowering your financial future with expert wealth management strategies tailored to your unique goals.

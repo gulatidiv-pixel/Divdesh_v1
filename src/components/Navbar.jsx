@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, TrendingUp, ChevronDown, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import logoFull from '../assets/logo-full.png';
 
 const Navbar = ({ openModal }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +31,8 @@ const Navbar = ({ openModal }) => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
-                        <Link to="/" className="flex items-center gap-2 text-brand-dark font-bold text-2xl">
-                            <TrendingUp className="w-8 h-8 text-brand-red" />
-                            <span>DivDesh<span className="text-brand-red">.</span></span>
+                        <Link to="/" className="flex items-center">
+                            <img src={logoFull} alt="DivDesh Logo" className="h-12 w-auto" />
                         </Link>
                     </div>
 
