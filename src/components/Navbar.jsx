@@ -3,7 +3,7 @@ import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import logoFull from '../assets/logo-full.png';
+import logoFull from '../assets/logo_full.jpg';
 
 const Navbar = ({ openModal }) => {
     const [isOpen, setIsOpen] = useState(false);
